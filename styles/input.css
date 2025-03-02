@@ -1,0 +1,19 @@
+@keyframes marquee {
+    0% { transform: translateX(0); } 
+    100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+    display: flex;
+    animation: marquee 10s linear infinite alternate;
+}
+
+.text-outline {
+    color: white;
+    -webkit-text-stroke: 2px black;
+  }
+
+.text-football-in-qtr {
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}

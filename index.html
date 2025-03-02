@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Football Landing Page</title>
+      <link rel="stylesheet" href="styles/input.css">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <script src="./scripts/main.js"></script>
+   </head>
+   <body class="mx-auto max-w-[1920px]">
+
+      <section id="hero">
+        <nav class="bg-[#2f1a45] text-white">
+          <div class="px-6 lg:px-[120px] border-b border-[#6d5f7d] py-4 flex flex-wrap justify-between items-center">
+             <div class="w-[151px] h-[50px] bg-[#d9d9d9]"></div>
+             <button id="menu-btn" class="lg:hidden absolute top-7 right-5 text-white focus:outline-none cursor-pointer">
+                <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
+                </svg>
+             </button>
+             <div id="menu" class="hidden lg:mt-0 mt-12 lg:flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-x-[32px]">
+                <div class="relative w-full lg:w-auto">
+                   <svg class="absolute ml-3 top-1/2 transform -translate-y-1/2 h-6 w-6 text-gray-300" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/>
+                   </svg>
+                   <input placeholder="Search" class="bg-[#443158] w-full lg:w-auto pl-12 px-4 py-2 rounded-full text-white focus:outline-none"/>
+                </div>
+                <div class="flex items-center gap-2">
+                   <img src="./images/globe.png" alt="globe" class="w-5 h-5"/>
+                   <select class="appearance-none bg-[#2f1a45] text-white pr-4 py-2 rounded-md cursor-pointer">
+                      <option value="ar" selected>AR</option>
+                      <option value="en">EN</option>
+                      <option value="ur">UR</option>
+                   </select>
+                </div>
+                <div class="flex justify-center px-5 items-center gap-2 bg-[url('./images/ticket.png')] bg-cover bg-center w-[133px] h-[44px] cursor-pointer">
+                   <img src="./images/ticket1.png" alt="ticket1"/>
+                   <hr class="border-l border-2 border-[#2F1A45] h-full border-dashed"/>
+                   <p class="text-[#2F1A45] font-bold">TICKETS</p>
+                </div>
+             </div>
+          </div>
+          <div id="nav-links" class="hidden lg:flex flex-col lg:flex-row py-4 px-6 lg:px-[120px] justify-between">
+             <div class="flex flex-wrap flex-col lg:flex-row items-center gap-6 lg:gap-x-[24px]">
+                <p class="cursor-pointer">National Team</p>
+                <p class="cursor-pointer">Competitions</p>
+                <p class="cursor-pointer">Football in Qatar</p>
+                <select class="bg-[#2f1a45] text-white pr-4 py-2 rounded-md cursor-pointer">
+                   <option value="ar">Regulations</option>
+                </select>
+                <select class="bg-[#2f1a45] text-white pr-4 py-2 rounded-md cursor-pointer">
+                   <option value="ar">About Us</option>
+                </select>
+                <p class="cursor-pointer">Football Development</p>
+                <select class="bg-[#2f1a45] text-white pr-4 py-2 rounded-md cursor-pointer">
+                   <option value="ar">Media Centers</option>
+                </select>
+                <p class="cursor-pointer">Tenders</p>
+                <p class="cursor-pointer">Referees</p>
+             </div>
+             <div class="flex items-center gap-2 cursor-pointer">
+                <img src="./images/contactus.png" alt="contact us" class="w-5 h-5"/>
+                <p class="inline-block">Contact Us</p>
+             </div>
+          </div>
+       </nav>
+         <div class="relative w-full flex justify-center items-center">
+            <img src="./images/herobackground.png" alt="Hero Background" class="w-full h-screen lg:h-auto object-cover lg:object-cover">
+            <div class="absolute max-w-[715px] bottom-5 lg:bottom-[142px] left-5 lg:left-[120px] text-white p-4 rounded-lg">
+               <p class="font-bold text-3xl">01-<span class="text-[#af4f64]">05</span></p>
+               <p class="text-3xl lg:text-7xl font-bold">WE ARE</p>
+               <p class="text-3xl lg:text-7xl font-bold">THE <span class="text-[#ffb92e]">CHAMPIONS</span></p>
+               <p class="text-xl mt-2">
+                  Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor pulvinar orci elementum nulla nunc. A diam quam et at viverra et.
+               </p>
+               <div class="grid my-5 gap-y-2 lg:grid-cols-3">
+                  <div class="flex items-center gap-x-[15px]">
+                     <img src="./images/fixtures.png" alt="fixtures"/>
+                     <p class="text-lg">Fixtures</p>
+                  </div>
+                  <div class="flex items-center gap-x-[15px]">
+                     <img src="./images/livescore.png" alt="livescore"/>
+                     <p class="text-lg">Live Score</p>
+                  </div>
+                  <div class="flex items-center gap-x-[15px]">
+                     <img src="./images/statistics.png" alt="statistics"/>
+                     <p class="text-lg">Statistics</p>
+                  </div>
+               </div>
+            </div>
+            <div class="absolute bottom-2 lg:right-[120px] lg:top-5 flex flex-row lg:flex-col gap-2">
+               <img class="cursor-pointer" src="./images/insta.png" alt="insta.png"/>
+               <img class="cursor-pointer" src="./images/yt.png" alt="yt.png"/>
+               <img class="cursor-pointer" src="./images/fb.png" alt="fb.png"/>
+               <img class="cursor-pointer" src="./images/twitter.png" alt="twitter.png"/>
+            </div>
+         </div>
+         <div class="w-full overflow-hidden bg-white py-2">
+            <div class="flex whitespace-nowrap gap-x-8 animate-marquee">
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ0.png" alt="Football" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ1.png" alt="Football1" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ2.png" alt="Football2" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ3.png" alt="Football3" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ0.png" alt="Football" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ1.png" alt="Football1" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ2.png" alt="Football2" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ3.png" alt="Football3" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ0.png" alt="Football" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ1.png" alt="Football1" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ2.png" alt="Football2" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ3.png" alt="Football3" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ0.png" alt="Football" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+               <div class="flex items-center gap-x-2">
+                  <img src="./images/footballinQ1.png" alt="Football1" class="w-5 h-5"/>
+                  <p>FOOTBALL IN QATAR</p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="mt-[120px] px-6 lg:px-[120px]" id="live-matches">
+         <h1 class="text-3xl lg:text-7xl mb-10 font-bold">
+            <span class="text-outline text-white">LIVE</span>
+            <span class="text-[#2f1a45]">MATCHES</span>
+         </h1>
+         <div class="flex flex-wrap gap-y-2 mb-10 justify-end lg:justify-between">
+            <div class="border p-3 rounded-xl">
+               <button id="national-btn" class="bg-[#2f1a45] rounded-xl py-3 px-6 text-white text-lg lg:text-2xl font-semibold lg:font-bold active-btn">
+               NATIONAL TEAM
+               </button>
+               <button id="other-btn" class="py-3 px-6 text-[#958ba0] rounded-xl text-lg lg:text-2xl font-semibold lg:font-bold">
+               OTHER MATCHES
+               </button>
+            </div>
+            <div class="flex items-center gap-x-4">
+
+               <button class="w-10 h-10 flex items-center justify-center border-2 border-[#8c0321] text-[#8c0321] rounded-full text-xl font-bold">
+               <img src="./images/left.png" alt="left"/>
+               </button>
+               <button class="w-10 h-10 flex items-center justify-center border-2 bg-[#8c0321] border-[#8c0321] text-white rounded-full text-xl font-bold">
+               <img src="./images/right.png" alt="right"/>
+               </button>
+            </div>
+         </div>
+         <div class="mt-5 mb-20 flex flex-cols-4 flex-wrap gap-y-20 gap-x-10 relative">
+            <div class="group relative w-full md:w-1/2 lg:w-[386.5px] h-[279px] bg-center bg-cover bg-[url('./images/matchcard.png')]  rounded-lg transition-all duration-500 ease-in-out hover:bg-[url('./images/matchCard222.png')]">
+               <div class="bg-white mx-auto px-2 w md:w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calender.png" alt="Calendar"/>
+                  <p class="text-black"> Saturday, May 12th</p>
+               </div>
+               <div class="flex mt-5 mx-auto justify-between items-center px-[50px]">
+                  <img src="./images/team1.png" alt="Team 1"/>
+                  <p class="h-10 w-10 flex items-center justify-center rounded-full text-red-500 bg-white">VS</p>
+                  <img src="./images/team2.png" alt="Team 2"/>
+               </div>
+               <div class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+               </div>
+               <div class="flex absolute bottom-5 left-0 right-0 gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-gray-300 rounded-lg p-2">10</p>
+                  <p>:</p>
+                  <p class="border border-gray-300 rounded-lg p-2">00</p>
+                  <p class="border border-gray-300 rounded-lg p-2">PM</p>
+               </div>
+               <div class="absolute left-16 bottom-[-130px] opacity-0 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <img src="./images/filledticket.png" alt="Filled Ticket" class="w-[250px]">
+               </div>
+            </div>
+            <div class="group relative w-full md:w-1/2 lg:w-[386.5px] h-[279px] bg-center bg-cover bg-[url('./images/matchcard.png')]  rounded-lg transition-all duration-500 ease-in-out hover:bg-[url('./images/matchCard222.png')]">
+               <div class="bg-white mx-auto px-2 w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calender.png" alt="Calendar"/>
+                  <p class="text-black"> Saturday, May 12th</p>
+               </div>
+               <div class="flex mt-5 mx-auto justify-between items-center px-[50px]">
+                  <img src="./images/team1.png" alt="Team 1"/>
+                  <p class="h-10 w-10 flex items-center justify-center rounded-full text-red-500 bg-white">VS</p>
+                  <img src="./images/team2.png" alt="Team 2"/>
+               </div>
+               
+               <div class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+               </div>  
+               <div class="flex absolute bottom-5 left-0 right-0 gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-gray-300 rounded-lg p-2">10</p>
+                  <p>:</p>
+                  <p class="border border-gray-300 rounded-lg p-2">00</p>
+                  <p class="border border-gray-300 rounded-lg p-2">PM</p>
+               </div>
+               
+               <div class="absolute left-16 bottom-[-130px] opacity-0 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <img src="./images/filledticket.png" alt="Filled Ticket" class="w-[250px]">
+               </div>
+            </div>
+            <div class="group relative w-full md:w-1/2 lg:w-[386.5px] h-[279px] bg-center bg-cover bg-[url('./images/matchcard.png')]  rounded-lg transition-all duration-500 ease-in-out hover:bg-[url('./images/matchCard222.png')]">
+               
+               <div class="bg-white mx-auto px-2 w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calender.png" alt="Calendar"/>
+                  <p class="text-black"> Saturday, May 12th</p>
+               </div>
+               
+               <div class="flex mt-5 mx-auto justify-between items-center px-[50px]">
+                  <img src="./images/team1.png" alt="Team 1"/>
+                  <p class="h-10 w-10 flex items-center justify-center rounded-full text-red-500 bg-white">VS</p>
+                  <img src="./images/team2.png" alt="Team 2"/>
+               </div>
+               
+               <div class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+               </div>
+               
+               <div class="flex absolute bottom-5 left-0 right-0 gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-gray-300 rounded-lg p-2">10</p>
+                  <p>:</p>
+                  <p class="border border-gray-300 rounded-lg p-2">00</p>
+                  <p class="border border-gray-300 rounded-lg p-2">PM</p>
+               </div>
+               
+               <div class="absolute left-16 bottom-[-130px] opacity-0 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <img src="./images/filledticket.png" alt="Filled Ticket" class="w-[250px]">
+               </div>
+            </div>
+            <div class="group relative w-full md:w-1/2 lg:w-[386.5px] h-[279px] bg-center bg-cover bg-[url('./images/matchcard.png')]  rounded-lg transition-all duration-500 ease-in-out hover:bg-[url('./images/matchCard222.png')]">  
+               <div class="bg-white mx-auto px-2 w-[176px] h-[32px] flex gap-x-1 items-center rounded-b-lg">
+                  <img src="./images/calender.png" alt="Calendar"/>
+                  <p class="text-black"> Saturday, May 12th</p>
+               </div>
+               
+               <div class="flex mt-5 mx-auto justify-between items-center px-[50px]">
+                  <img src="./images/team1.png" alt="Team 1"/>
+                  <p class="h-10 w-10 flex items-center justify-center rounded-full text-red-500 bg-white">VS</p>
+                  <img src="./images/team2.png" alt="Team 2"/>
+               </div>
+               
+               <div class="flex text-black font-bold group-hover:text-white mx-auto justify-between items-center px-[50px]">
+                  <p>Umm Salal SC</p>
+                  <p>Al-Duhail SC</p>
+               </div>
+               
+               <div class="flex absolute bottom-5 left-0 right-0 gap-x-2 mt-2 text-black items-center justify-center">
+                  <p class="border border-gray-300 rounded-lg p-2">10</p>
+                  <p>:</p>
+                  <p class="border border-gray-300 rounded-lg p-2">00</p>
+                  <p class="border border-gray-300 rounded-lg p-2">PM</p>
+               </div>
+               
+               <div class="absolute left-16 bottom-[-130px] opacity-0 translate-y-[-20%] transition-all duration-500 ease-in-out group-hover:opacity-100 group-hover:translate-y-0">
+                  <img src="./images/filledticket.png" alt="Filled Ticket" class="w-[250px]">
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="mt-[120px] px-6 lg:px-[120px]" id="latest-news">
+         <p class="text-red-500">/ NEWS & UPDATES</p>
+         <div class="grid grid-cols-1 lg:grid-cols-2">
+            <h1 class="text-3xl mt-5 flex flex-col gap-y-2 lg:text-7xl mb-10 font-bold">
+               <span class="text-outline text-white">LATEST</span>
+               <span class="text-[#2f1a45]">NEWS & UPDATES</span>
+            </h1>
+            <div class="flex flex-col lg:flex-row gap-10 items-start lg:items-center">
+               <p>Lorem ipsum dolor sit amet consectetur. Vestibulum metus non tortor pulvinar orci elementum nulla nunc. A diam quam et at viverra et.</p>
+               <a href="#" class="underline cursor-pointer inline whitespace-nowrap">View all</a>
+               <div class="flex items-center gap-x-4">
+                  
+                  <button class="w-10 h-10 flex items-center justify-center border-2 border-[#8c0321] text-[#8c0321] rounded-full text-xl font-bold">
+                  <img src="./images/left.png" alt="left"/>
+                  </button>
+                  
+                  <button class="w-10 h-10 flex items-center justify-center border-2 bg-[#8c0321] border-[#8c0321] text-white rounded-full text-xl font-bold">
+                  <img src="./images/right.png" alt="right"/>
+                  </button>
+               </div>
+            </div>
+         </div>
+         <div class="flex flex-wrap justify-between gap-3">
+            
+            <div class="bg-white w-full sm:w-[90%] md:w-[48%] lg:w-[32%] border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg">
+               
+               <div class="relative overflow-hidden">
+                  <img src="images/new1.png" alt="Qatar football celebration"
+                     class="w-full transition-transform duration-300 transform hover:scale-110">
+               </div>
+               
+               <div class="p-4">
+                  
+                  <div class="flex items-center text-gray-500 text-sm mb-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                     </svg>
+                     <span>Saturday, May 12th</span>
+                  </div>
+                  <h2 class="font-bold text-xl mb-3">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals Group F Top Spot</h2>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                     <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-medium">REFEREES</span>
+                     <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-medium">FOOTBALL DEVELOPMENT</span>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="bg-white w-full sm:w-[90%] md:w-[48%] lg:w-[32%] border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg">
+               <div class="relative overflow-hidden">
+                  <img src="images/new2.png" alt="Qatar football celebration" class="w-full transition-transform duration-300 transform hover:scale-110">
+               </div>
+               <div class="p-4">
+                  <div class="flex items-center text-gray-500 text-sm mb-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                     </svg>
+                     <span>Saturday, May 12th</span>
+                  </div>
+                  <h2 class="font-bold text-xl mb-3">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals Group F Top Spot</h2>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                     <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-medium">REFEREES</span>
+                     <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-medium">FOOTBALL DEVELOPMENT</span>
+                  </div>
+               </div>
+            </div>
+            <div class="bg-white w-full sm:w-[90%] md:w-[48%] lg:w-[32%] border border-gray-300 rounded-lg overflow-hidden shadow-md transition-transform duration-300 hover:shadow-lg">
+               <div class="relative overflow-hidden">
+                  <img src="images/new3.png" alt="Qatar football celebration" class="w-full transition-transform duration-300 transform hover:scale-110">
+               </div>
+               <div class="p-4">
+                  <div class="flex items-center text-gray-500 text-sm mb-2">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                     </svg>
+                     <span>Saturday, May 12th</span>
+                  </div>
+                  <h2 class="font-bold text-xl mb-3">Japan Books Ticket to AFC U17 Asian Cup 2025 Finals, Seals Group F Top Spot</h2>
+                  <div class="flex flex-wrap gap-2 mt-2">
+                     <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-medium">REFEREES</span>
+                     <span class="px-3 py-1 bg-gray-200 text-gray-700 rounded-full text-xs font-medium">FOOTBALL DEVELOPMENT</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section id=" football-qatar">
+         <div class="w-full my-10 w-full overflow-hidden">
+            
+            <div class="relative  w-full h-[500px] md:h-80 lg:h-96 xl:h-[428px]" style="background-image: url('images/footballinQBG.png'); background-size: cover; background-position: center;">
+               <div class="absolute inset-0 flex md:flex-row flex-col">
+                  
+                  <div class="w-full lg:px-[120px] md:w-1/2 p-4 md:p-6 lg:p-8 flex flex-col justify-center">
+                     <div class="text-white">
+                        <p class="text-xs text-red-500 md:text-sm lg:text-base opacity-80 uppercase">/ What we are</p>
+                        <h2 class="text-xl md:text-2xl lg:text-4xl xl:text-5xl font-bold mt-2 mb-4">
+                           <span class="text-football-in-qtr">FOOTBALL</span>
+                           <span class="text-white"> IN QATAR</span>
+                        </h2>
+                        <p class="text-xl opacity-90 max-w-md mb-6">
+                           Lorem ipsum dolor sit amet consectetur. Vestibulum metus non
+                        </p>
+                        <div class="flex bg-white rounded-lg w-fit items-center">
+                           <button class="border-r-gray-400 border-2 rounded-lg text-purple-900 text-xs md:text-sm py-2 px-4 rounded-sm flex items-center space-x-2 w-max hover:bg-gray-100 transition">
+                           <span class="font-bold">KNOW MORE</span>
+                           </button>
+                           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 mx-3 w-4" fill="none" viewBox="0 0 24 24" stroke="black">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                           </svg>
+                        </div>
+                     </div>
+                  </div>
+                  
+                  <div class="w-full md:w-1/2 p-4 md:p-6 lg:p-8 xl:p-12 flex flex-col justify-center">
+                     <div class="text-white">
+                        <div class="flex items-center mb-3">
+                           <img src="images/book.png" alt="book"/>
+                           <h3 class="ml-3 text-lg md:text-xl lg:text-2xl font-bold">RULES & REGULATIONS</h3>
+                        </div>
+                        <p class="text-lg opacity-90 max-w-md mb-6">
+                           Lorem ipsum dolor sit amet consectetur. Vestibulum metus non
+                        </p>
+                        <button class="text-white underline font-bold uppercase">
+                        LEARN MORE
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="mt-[120px] px-6 lg:px-[120px]" id="football-ranking">
+         
+         <div class="flex justify-between items-center mb-6">
+            <h2 class="text-red-500 font-medium flex items-center gap-2">
+               / TWITTER FEED
+            </h2>
+            <div class="flex items-center gap-2">
+               <button class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center hover:bg-gray-100">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+               </button>
+               <button class="w-8 h-8 rounded-full bg-red-800 text-white flex items-center justify-center hover:bg-red-900">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="rounded-lg overflow-hidden border border-gray-100 pb-4">  
+               <div class="relative mb-2">
+                  <img src="images/twitterfeed1.png" alt="Football players" class="w-full h-56 object-cover"/>
+               </div>
+               <div class="px-3">
+                  <p class="text-sm text-purple-800 font-medium mb-1">
+                     #Annabi is ready for tomorrow's match! 👊 🇶🇦
+                  </p>
+                  <p class="text-xs text-gray-500 mb-1">
+                     #Our_Journey_To2026
+                  </p>
+                  <p class="text-xs text-gray-400">
+                     2 hr ago
+                  </p>
+               </div>
+            </div>
+            
+            <div class="rounded-lg overflow-hidden border border-gray-100 pb-4">
+               
+               <div class="relative mb-2">
+                  <img src="images/tfeed2.png" alt="Football match" class="w-full h-56 object-cover"/>
+               </div>
+               
+               <div class="px-3">
+                  <p class="text-sm text-purple-800 font-medium mb-1">
+                     #Annabi is ready for tomorrow's match! 👊 🇶🇦
+                  </p>
+                  <p class="text-xs text-gray-500 mb-1">
+                     #Our_Journey_To2026
+                  </p>
+                  <p class="text-xs text-gray-400">
+                     1 Aug 2023
+                  </p>
+               </div>
+            </div>
+            
+            <div class="rounded-lg overflow-hidden border border-gray-100 pb-4">
+               
+               <div class="relative mb-2">
+                  <img src="images/twitterfeed1.png" alt="Football players" class="w-full h-56 object-cover"/>
+               </div>
+               
+               <div class="px-3">
+                  <p class="text-sm text-purple-800 font-medium mb-1">
+                     #Annabi is ready for tomorrow's match! 👊 🇶🇦
+                  </p>
+                  <p class="text-xs text-gray-500 mb-1">
+                     #Our_Journey_To2026
+                  </p>
+                  <p class="text-xs text-gray-400">
+                     20 Jul 2024
+                  </p>
+               </div>
+            </div>
+            
+            <div class="rounded-lg overflow-hidden border border-gray-100 pb-4">
+               
+               <div class="relative mb-2">
+                  <img src="images/tfeed3.png" alt="Football team" class="w-full h-56 object-cover"/>
+               </div>
+               
+               <div class="px-3">
+                  <p class="text-sm text-purple-800 font-medium mb-1">
+                     #Annabi is ready for tomorrow's match! 👊 🇶🇦
+                  </p>
+                  <p class="text-xs text-gray-500 mb-1">
+                     #Our_Journey_To2026
+                  </p>
+                  <p class="text-xs text-gray-400">
+                     20 Jul 2024
+                  </p>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="mt-[120px] px-6 lg:px-[120px]" id="football-ranking">
+         <div class="bg-[url('./images/tablebg.png')] p-5 lg:p-20">
+            <h2 class="text-red-500 font-medium flex items-center gap-2">
+               / TEAM TABLE
+            </h2>
+            <h1 class="text-3xl mt-5 flex flex-row flex-wrap gap-x-2 lg:text-7xl mb-10 font-bold">
+               <span class="text-outline text-white">FOOTBALL </span> 
+               <span class="text-[#2f1a45]"> RANKING</span>
+            </h1>
+            <div class="border rounded-xl">
+              <button id="national-btn" class="bg-[#2f1a45] rounded-t-xl py-2 px-4 lg:py-3 lg:px-6 text-white text-base lg:text-2xl font-semibold lg:font-bold active-btn">
+                 FIFA WORLD RANKING
+              </button>
+              <button class="py-2 px-4 lg:py-3 lg:px-6 bg-white text-black rounded-t-xl text-base lg:text-2xl font-medium md:font-semibold lg:font-bold">
+                 ASIAN TEAMS RANKING
+              </button>
+              <button class="py-2 px-4 lg:py-3 lg:px-6 bg-white text-black rounded-t-xl text-base lg:text-2xl font-medium md:font-semibold lg:font-bold">
+                 Ooredoo Starts League
+              </button>
+           </div>
+            <div class=" w-full overflow overflow-x-auto ">
+               <div class="grid min-w-[1000px] bg-[#f2f2f2] p-5 lg:p-10 rounded-t-lg font-medium md:font-semibold grid-cols-5">
+                  <p>POSITION</p>
+                  <p>TEAM</p>
+                  <p>POINTS</p>
+                  <p>PREVIOUS POINTS</p>
+                  <p>RECENT MATCHES RESULTS</p>
+               </div>
+               <div class="bg-gradient-to-r min-w-[1000px] rounded-b-lg p-5 lg:p-10 space-y-2 text-black from-purple-500 to-blue-400">
+                  <div class="grid bg-[#f2f2f2] p-2 lg:p-5 items-center rounded-lg font-semibold grid-cols-5">
+                     <p class="text-gray-500">01</p>
+                     <div class="flex gap-x-2 items-center"> <img src="images/argentina.png" alt="argentina"/> Argentina <img src="images/uparrow.png" alt="uparrow"/> <span class="font-bold text-[#15aa9c]">+3</span></div>
+                     <p>1983.0</p>
+                     <p>1215.5</p>
+                     <div class="flex gap-x-2">
+                        <p class="text-white bg-[#15aa9c] w-[30px] h-[30px] flex items-center justify-center rounded-full">W</p>
+                        <p class="text-white bg-[#cc1a44] w-[30px] h-[30px] flex items-center justify-center rounded-full">L</p>
+                     </div>
+                  </div>
+                  <div class="grid bg-[#f2f2f2] p-2 lg:p-5 items-center rounded-lg font-semibold grid-cols-5">
+                     <p class="text-gray-500">02</p>
+                     <div class="flex gap-x-2 items-center"> <img src="images/argentina.png" alt="argentina"/> Argentina <img src="images/uparrow.png" alt="uparrow"/> <span class="font-bold text-[#15aa9c]">+3</span></div>
+                     <p>1983.0</p>
+                     <p>1215.5</p>
+                     <div class="flex gap-x-2">
+                        <p class="text-white bg-[#15aa9c] w-[30px] h-[30px] flex items-center justify-center rounded-full">W</p>
+                        <p class="text-white bg-[#cc1a44] w-[30px] h-[30px] flex items-center justify-center rounded-full">L</p>
+                     </div>
+                  </div>
+                  <div class="grid bg-[#f2f2f2] p-2 lg:p-5 items-center rounded-lg font-semibold grid-cols-5">
+                     <p class="text-gray-500">03</p>
+                     <div class="flex gap-x-2 items-center"> <img src="images/argentina.png" alt="argentina"/> Argentina <img src="images/uparrow.png" alt="uparrow"/> <span class="font-bold text-[#15aa9c]">+3</span></div>
+                     <p>1983.0</p>
+                     <p>1215.5</p>
+                     <div class="flex gap-x-2">
+                        <p class="text-white bg-[#15aa9c] w-[30px] h-[30px] flex items-center justify-center rounded-full">W</p>
+                        <p class="text-white bg-[#cc1a44] w-[30px] h-[30px] flex items-center justify-center rounded-full">L</p>
+                     </div>
+                  </div>
+                  <div class="grid bg-[#f2f2f2] p-2 lg:p-5 items-center rounded-lg font-semibold grid-cols-5">
+                     <p class="text-gray-500">04</p>
+                     <div class="flex gap-x-2 items-center"> <img src="images/argentina.png" alt="argentina"/> Argentina <img src="images/uparrow.png" alt="uparrow"/> <span class="font-bold text-[#15aa9c]">+3</span></div>
+                     <p>1983.0</p>
+                     <p>1215.5</p>
+                     <div class="flex gap-x-2">
+                        <p class="text-white bg-[#15aa9c] w-[30px] h-[30px] flex items-center justify-center rounded-full">W</p>
+                        <p class="text-white bg-[#cc1a44] w-[30px] h-[30px] flex items-center justify-center rounded-full">L</p>
+                     </div>
+                  </div>
+                  <div class="grid bg-[#f2f2f2] p-2 lg:p-5 items-center rounded-lg font-semibold grid-cols-5">
+                     <p class="text-gray-500">05</p>
+                     <div class="flex gap-x-2 items-center"> <img src="images/argentina.png" alt="argentina"/> Argentina <img src="images/downarrow.png" alt="downarrow"/> <span class="font-bold text-red-500">-3</span></div>
+                     <p>1983.0</p>
+                     <p>1215.5</p>
+                     <div class="flex gap-x-2">
+                        <p class="text-white bg-[#15aa9c] w-[30px] h-[30px] flex items-center justify-center rounded-full">W</p>
+                        <p class="text-white bg-[#cc1a44] w-[30px] h-[30px] flex items-center justify-center rounded-full">L</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="mt-[120px] px-6 lg:px-[120px]" id="media">
+         <h2 class="text-red-500 font-medium flex items-center gap-2">
+            / MEDIA
+         </h2>
+         <h1 class="text-3xl mt-5 flex flex-row gap-x-2 lg:text-7xl mb-10 font-bold">
+            <span class="text-outline text-white">IMAGES </span> 
+            <span class="text-[#2f1a45]"> & VIDEOS</span>
+         </h1>
+         <div class="grid grid-cols-12 gap-2">
+            
+            
+            <div class="col-span-12 sm:col-span-6 md:col-span-3 relative rounded-md overflow-hidden">
+               <img src="images/asset1.png" alt="Football celebration" class="w-[458px] h-[331px] object-cover"/>
+            </div>
+            
+            <div class="col-span-12 sm:col-span-6 md:col-span-3 rounded-md overflow-hidden">
+               <img src="images/asset2.png" alt="Fan cheering" class="w-[458px] h-[331px] object-cover" />
+            </div>
+            
+            <div class="col-span-6 sm:col-span-3 md:col-span-2 flex flex-col gap-2">
+               <div class="rounded-md overflow-hidden ">
+                  <img src="images/asset5.png" alt="Player celebration" class="w-full h-[160px] object-cover"/>
+               </div>
+               <div class="rounded-md overflow-hidden ">
+                  <img src="images/asset6.png" alt="Football boots" class="w-full h-[160px] object-cover"/>
+               </div>
+            </div>
+            
+            <div class="col-span-6 sm:col-span-3 md:col-span-2 rounded-md overflow-hidden">
+               <img src="images/asset3.png" alt="Players on field" class="w-[650px] h-[325px] object-cover"/>
+            </div>
+            
+            <div class="col-span-12 sm:col-span-6 md:col-span-2 rounded-md overflow-hidden">
+               <img src="images/trackrunner.png" alt="Track runners" class="w-[650px] h-[325px] object-cover"/>
+            </div>
+            
+            
+            <div class="col-span-12 md:col-span-2 rounded-md overflow-hidden">
+               <img src="images/asset3.png" alt="Players on field" class="w-[356px] h-[331px] object-cover"/>
+            </div>
+            
+            <div class="col-span-12 md:col-span-4 relative rounded-md overflow-hidden">
+               <img src="images/asset4.png" alt="Fan with flag" class="w-full h-[330px] object-cover"/>
+            </div>
+            
+            <div class="col-span-12 sm:col-span-4 md:col-span-2 rounded-md overflow-hidden">
+               <img src="images/asset7.png" alt="Track close-up" class="w-full h-[331px] object-cover "/>
+            </div>
+            
+            <div class="col-span-6 sm:col-span-4 md:col-span-2 rounded-md overflow-hidden">
+               <img src="images/asset8.png" alt="Kid celebrating" class="w-full h-[331px] object-cover"/>
+            </div>
+            
+            <div class="col-span-6 sm:col-span-4 md:col-span-2 rounded-md overflow-hidden">
+               <img src="images/runninginground.png" alt="Team photo" class="w-full h-[165px] object-cover"/>
+               <img src="images/asset9.png" alt="Team photo" class="w-full h-[165px] "/>
+            </div>
+         </div>
+      </section>
+      
+      <footer class="mt-[120px] bg-[#2f1a45]">
+         <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="flex px-6 lg:px-[120px] border-b border-r py-20 border-gray-300 relative flex-col gap-y-10">
+               <div class="w-[151px] h-[50px] bg-[#d9d9d9]"></div>
+               <p class="text-2xl max-w-md text-white">Lorem ipsum dolor sit amet consectetur. Vestibulum metus non </p>
+               <div class="flex gap-x-2 flex-wrap mt-10">
+                  <img src="images/insta.png" alt="insta"/>
+                  <img src="images/yt.png" alt="yt"/>
+                  <img src="images/fb.png" alt="fb"/>
+                  <img src="images/twitter.png" alt="twitter"/>
+               </div>
+               <img class="absolute opacity-80 bottom-0 -left-[80px]" src="images/ball.png" alt="Fball"/>
+            </div>
+            <div class="border-l text-white border-b grid sm:grid-cols-1 md:grid-cols-2 border-gray-300">
+               <div class="flex border p-6 md:p-14 flex-col gap-y-2 border-opacity-25">
+                  <p class="font-bold">QUICK LINKS</p>
+                  <p class="cursor-pointer hover:text-gray-400">Home</p>
+                  <p class="cursor-pointer hover:text-gray-400">Competitions</p>
+                  <p class="cursor-pointer hover:text-gray-400">Football in Qatar</p>
+                  <p class="cursor-pointer hover:text-gray-400">About Us</p>
+                  <p class="cursor-pointer hover:text-gray-400">Careers</p>
+               </div>
+               <div class="flex border p-6 md:p-14 flex-col gap-y-2 border-opacity-25">
+                  <p class="font-bold">QUICK LINKS</p>
+                  <p class="cursor-pointer hover:text-gray-400">Home</p>
+                  <p class="cursor-pointer hover:text-gray-400">Competitions</p>
+                  <p class="cursor-pointer hover:text-gray-400">Football in Qatar</p>
+                  <p class="cursor-pointer hover:text-gray-400">About Us</p>
+                  <p class="cursor-pointer hover:text-gray-400">Careers</p>
+               </div>
+               <div class="flex border p-6 md:p-14 flex-col gap-y-2 border-opacity-25">
+                  <p class="font-bold">QUICK LINKS</p>
+                  <p class="cursor-pointer hover:text-gray-400">Home</p>
+                  <p class="cursor-pointer hover:text-gray-400">Competitions</p>
+                  <p class="cursor-pointer hover:text-gray-400">Football in Qatar</p>
+                  <p class="cursor-pointer hover:text-gray-400">About Us</p>
+                  <p class="cursor-pointer hover:text-gray-400">Careers</p>
+               </div>
+               <div class="flex border p-6 md:p-14 flex-col gap-y-2 border-opacity-25">
+                  <p class="font-bold">QUICK LINKS</p>
+                  <p class="cursor-pointer hover:text-gray-400">Home</p>
+                  <p class="cursor-pointer hover:text-gray-400">Competitions</p>
+                  <p class="cursor-pointer hover:text-gray-400">Football in Qatar</p>
+                  <p class="cursor-pointer hover:text-gray-400">About Us</p>
+                  <p class="cursor-pointer hover:text-gray-400">Careers</p>
+               </div>
+            </div>
+         </div>
+         <div class="py-10 flex flex-wrap gap-x-10 gap-y-20 items-start justify-center mx-6 lg:mx-[110px]">
+            <img src="images/partner11.png" alt="partner11"/>
+            <img src="images/partner12.png" alt="partner12"/>
+            <img src="images/partner13.png" alt="partner13"/>
+            <img src="images/partner14.png" alt="partner14"/>
+            <img src="images/partner15.png" alt="partner15"/>
+            <img src="images/partner16.png" alt="partner16"/>
+            <img src="images/partner12.png" alt="partner12"/>
+            <img src="images/partner11.png" alt="partner11"/>
+         </div>
+         <div class="bg-[#8c0321] h-10 flex justify-center items-center">
+            <p class="text-gray-300">Powered by Qatar Football Association</p>
+         </div>
+      </footer>
+   </body>
+</html>
